@@ -1,0 +1,47 @@
+@import '../../helpers/variables.scss';
+
+.CartHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+
+  & h2 {
+    font-size: 1.5rem;
+  }
+}
+.checkout__button {
+  cursor: pointer;
+  background-color: $color-quaternary;
+  font-size: 1.1rem;
+  color: $color-tertiary;
+  height: 3rem;
+  padding: 10px;
+}
+@media (max-width: 767px) {
+  .CartHeader {
+    width: 600px;
+    margin: 100px auto 0 auto;
+  }
+}
+@media (max-width: 630px) {
+  .CartHeader {
+    width: 500px;
+  }
+}
+@media (max-width: 533px) {
+  .CartHeader {
+    width: 400px;
+  }
+}
+@media (max-width: 431px) {
+  .CartHeader {
+    width: 300px;
+  }
+  .CartHeader h2 {
+    font-size: 1.3rem;
+  }
+  .checkout__button {
+    height: 2.5rem;
+    font-size: 0.9rem;
+  }
+}

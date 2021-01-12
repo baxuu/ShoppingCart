@@ -1,0 +1,92 @@
+@import '../../helpers/variables.scss';
+
+.CartSummary {
+  border: 1px solid $color-primary;
+  margin-top: 25px;
+  font-weight: bold;
+  width: 25%;
+  min-width: 250px;
+}
+.CartSummary h2 {
+  text-transform: uppercase;
+  width: 100%;
+  padding: 10px;
+  margin-top: 0;
+  background-color: $color-secondary;
+  color: $color-quaternary;
+  border-bottom: 1px solid $color-primary;
+}
+.container__position {
+  width: 100%;
+  padding: 10px;
+}
+.position-line-name {
+  font-size: 1.1rem;
+}
+.container__position-line {
+  display: flex;
+  background-color: $color-tertiary;
+  width: 100%;
+
+  justify-content: space-between;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 10px;
+  font-weight: bold;
+}
+
+.container__position-line:nth-child(1) {
+  border-bottom: 1px solid $color-primary;
+}
+.container__position-line:nth-child(2) {
+  font-weight: bold;
+}
+
+.cost_elements button {
+  width: 100%;
+  margin-top: 10px;
+  box-sizing: border-box;
+  height: 40px;
+}
+
+.position_subtotal,
+.position_total {
+  color: $color-quaternary;
+  font-size: 1.1rem;
+}
+.position_total {
+  font-size: 1.3rem;
+}
+
+.proceed__button {
+  display: block;
+  margin: 10px auto;
+  width: 90%;
+  cursor: pointer;
+  background-color: $color-quaternary;
+  color: $color-tertiary;
+  height: 3rem;
+  padding: 10px;
+}
+
+@media (max-width: 991px) {
+  .CartSummary {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 431px) {
+  .proceed__button {
+    font-size: 0.9rem;
+    width: 70%;
+    height: 2.5rem;
+  }
+  .position_total {
+    font-size: 1.2rem;
+  }
+  .position_subtotal {
+    font: 1rem;
+  }
+  .CartSummary h2 {
+    font-size: 0.9rem;
+  }
+}

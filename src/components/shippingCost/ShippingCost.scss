@@ -1,0 +1,29 @@
+@import '../../helpers/variables.scss';
+
+.ShippingCost {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: $color-secondary;
+  border: 1px solid $color-primary;
+}
+.ShippingCost div {
+  text-transform: uppercase;
+  color: $color-quaternary;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 991px) {
+  .ShippingCost {
+    margin-top: 1rem;
+    width: 25%;
+    min-width: 250px;
+  }
+}
+@media (max-width: 431px) {
+  .ShippingCost div {
+    font-size: 0.9rem;
+  }
+}
