@@ -2,17 +2,25 @@
 
 ShoppingCart is a simple shopping cart management application.
 
-![]()
+![](https://raw.githubusercontent.com/baxuu/ShoppingCart/master/src/assets/sampleCart.jpg)
 
 ### Built with
 
 - `React,`
 - `Redux,`
+- `SASS,`
 
 
 ## Setup
 
-To run this project, install it locally using npm:
+Clone or download repository 
+
+```
+https://github.com/baxuu/ShoppingCart.git
+```
+
+then
+
 
 ```
 $ cd ShoppingCart
