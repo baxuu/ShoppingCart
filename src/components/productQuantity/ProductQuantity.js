@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 import { useDispatch } from 'react-redux';
+import PropTypes from 'prop-types';
 
 import sumCartImage from '../../assets/edit-img.png';
 import {
@@ -58,6 +59,10 @@ const ProductQuantity = ({ product }) => {
       />
     </td>
   );
+};
+
+ProductQuantity.propTypes = {
+  product: PropTypes.object,
 };
 
 export default ProductQuantity;
