@@ -62,7 +62,12 @@ const ProductQuantity = ({ product }) => {
 };
 
 ProductQuantity.propTypes = {
-  product: PropTypes.object,
+  product: PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    image: PropTypes.string.isRequired,
+    price: PropTypes.number.isRequired,
+    quantity: PropTypes.number.isRequired,
+  }),
 };
 
 export default ProductQuantity;
